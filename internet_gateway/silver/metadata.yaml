@@ -1,3 +1,7 @@
+# silver security templates for mid level security without URL, or WF subscriptions
+# compatible with iron-skillet configs but NOT BEST PRACTICE due to lack or URL and WF
+# xml snippets not in the local directory pull from the gold master set of snippets
+
 name: silver
 label: Silver
 description: Silver Advanced Security

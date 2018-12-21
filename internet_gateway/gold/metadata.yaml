@@ -1,3 +1,7 @@
+# gold security templates for top level security including threat, URL, or WF subscriptions
+# includes an additional security rule for strict file blocking of unknown url category
+# this is the master directory for xml snippets shared by silver and bronze
+
 name: gold
 label: Gold
 description: Gold Advanced Security

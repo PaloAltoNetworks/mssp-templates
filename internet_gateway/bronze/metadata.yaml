@@ -1,3 +1,7 @@
+# bronze security templates for basic level security without threat, URL, or WF subscriptions
+# requires ignoring the Palo Alto Networks published EDL rules from iron-skillet
+# xml snippets not in the local directory pull from the gold master set of snippets
+
 name: bronze
 label: Bronze
 description: Bronze Basic Security
@@ -32,6 +36,8 @@ variables:
     description: untrust zone name
     default: internet
     type_hint: text
+# toggle to NOT load the EDL security rules found in iron-skillet
+# not best practice but these EDLs require a threat protect subscription
   - name: INCLUDE_PAN_EDL
     description: include the predefined Palo Alto Networks external lists
     default: False
