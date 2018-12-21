@@ -38,12 +38,9 @@ variables:
     type_hint: text
 
 snippets:
-  - name: security_rules-security-rules-silver
-    xpath: /config/devices/entry[@name='localhost.localdomain']/device-group/entry[@name='{{ FW_NAME }}']/post-rulebase/security
-    file: security_rules_silver.xml
   - name: tag
     xpath: /config/devices/entry[@name='localhost.localdomain']/device-group/entry[@name='{{ FW_NAME }}']/tag
     file: tag.xml
-
-
-
+  - name: security_rules-security-rules-silver
+    xpath: /config/devices/entry[@name='localhost.localdomain']/device-group/entry[@name='{{ FW_NAME }}']/post-rulebase/security
+    file: security_rules_silver.xml
