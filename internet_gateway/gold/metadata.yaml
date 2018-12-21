@@ -1,0 +1,51 @@
+# gold security templates for top level security including threat, URL, or WF subscriptions
+# includes an additional security rule for strict file blocking of unknown url category
+# this is the master directory for xml snippets shared by silver and bronze
+
+name: gold
+label: Gold
+description: Gold Advanced Security
+type: panorama
+extends: internet_gateway_base
+
+labels:
+  service_type: internet_gateway
+
+variables:
+  - name: FW_NAME
+    description: Device Name
+    default: panos-01
+    type_hint: text
+  - name: INTF_TRUST
+    description: Trust Interface
+    default: ethernet1/1
+    type_hint: text
+  - name: INTF_UNTRUST
+    description: Untrust Interface
+    default: ethernet1/2
+    type_hint: text
+  - name: IP_12
+    description: IP 12
+    default: 192.168.1.1/24
+    type_hint: ip_address
+  - name: ZONE_TRUST
+    description: trust zone
+    default: trust
+    type_hint: text
+  - name: ZONE_UNTRUST
+    description: untrust zone name
+    default: internet
+    type_hint: text
+
+snippets:
+  - name: profile_group_unknown_url
+    xpath: /config/devices/entry[@name='localhost.localdomain']/device-group/entry[@name='{{ FW_NAME }}']/profile-group
+    file: profile_group_unknown_url.xml
+  - name: tag
+    xpath: /config/devices/entry[@name='localhost.localdomain']/device-group/entry[@name='{{ FW_NAME }}']/tag
+    file: tag.xml
+  - name: security_rules-security-rules-gold
+    xpath: /config/devices/entry[@name='localhost.localdomain']/device-group/entry[@name='{{ FW_NAME }}']/post-rulebase/security
+    file: security_rules_gold.xml
+
+
