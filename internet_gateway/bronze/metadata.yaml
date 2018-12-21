@@ -2,7 +2,7 @@ name: bronze
 label: Bronze
 description: Bronze Basic Security
 type: service
-extends: skillet_bronze
+extends: internet_gateway_base
 
 labels:
   service_type: internet_gateway
@@ -32,30 +32,21 @@ variables:
     description: untrust zone name
     default: internet
     type_hint: text
+  - name: INCLUDE_PAN_EDL
+    description: include the predefined Palo Alto Networks external lists
+    default: False
+    type_hint: dropdown
+    dd_list:
+      - key: yes
+        value: True
+      - key: no
+        value: False
 
 snippets:
   - name: tag
     xpath: /config/devices/entry[@name='localhost.localdomain']/device-group/entry[@name='{{ FW_NAME }}']/tag
     file: tag.xml
-  - name: nat-source-nat-to-untrust
-    xpath: /config/devices/entry[@name='localhost.localdomain']/device-group/entry[@name='{{ FW_NAME }}']/post-rulebase/nat
-    file: source_nat_to_untrust.xml
   - name: security_rules-security-rules-bronze
     xpath: /config/devices/entry[@name='localhost.localdomain']/device-group/entry[@name='{{ FW_NAME }}']/post-rulebase/security
     file: security_rules_bronze.xml
-  - name: network_profiles-network-profiles
-    xpath: /config/devices/entry[@name='localhost.localdomain']/template-stack/entry[@name='{{ FW_NAME }}']/config/devices/entry[@name='localhost.localdomain']/network/profiles
-    file: network_profiles.xml
-  - name: interface
-    xpath: /config/devices/entry[@name='localhost.localdomain']/template-stack/entry[@name='{{ FW_NAME }}']/config/devices/entry[@name='localhost.localdomain']/network/interface
-    file: interface.xml
-  - name: virtual_router
-    xpath: /config/devices/entry[@name='localhost.localdomain']/template-stack/entry[@name='{{ FW_NAME }}']/config/devices/entry[@name='localhost.localdomain']/network/virtual-router
-    file: virtual_router.xml
-  - name: import_zone_interface
-    xpath: /config/devices/entry[@name='localhost.localdomain']/template-stack/entry[@name='{{ FW_NAME }}']/config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/import
-    file: zone_import_interface.xml
-  - name: zone
-    xpath: /config/devices/entry[@name='localhost.localdomain']/template-stack/entry[@name='{{ FW_NAME }}']/config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/zone
-    file: zone.xml
 
