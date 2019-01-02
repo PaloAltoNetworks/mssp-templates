@@ -3,8 +3,8 @@
 # snippet name
 name: set_command_gsb_panos
 # label used for menu selection
-label: v8.1 G-S-B set commands for Panorama
-description: Set command configuration for Panorama
+label: v8.1 G-S-B set commands for PAN-OS
+description: Set command configuration for PAN-OS
 # type of device configuration
 type: template
 extends:
