@@ -33,6 +33,14 @@ variables:
     description: IP 12
     default: 192.168.1.1/24
     type_hint: ip_address
+  - name: IP_11
+    description: IP 12
+    default: 192.168.2.1/24
+    type_hint: ip_address
+  - name: ROUTING_DG
+    description: untrust zone name
+    default: 192.168.2.1
+    type_hint: text
   - name: ZONE_TRUST
     description: trust zone
     default: trust
@@ -51,10 +59,20 @@ variables:
     description: subnet mask used for the DHCP pool
     default: 255.255.255.0
     type_hint: ip_address
-  - name: ROUTING_GW
+  - name: DHCP_DG
     description: routing default-gatway if static interfaces used (no DHCP inheritance)
     default: 192.168.1.1
     type_hint: text
+# these may be pull from iron-skillet if chaining configurations
+# however added here to create the spreadsheet w/out iron-skillet data
+  - name: DNS_1
+    description: primary DNS for the DHCP pool
+    default: 8.8.8.8
+    type_hint: ip_address
+  - name: DNS_2
+    description: primary DNS for the DHCP pool
+    default: 8.8.4.4
+    type_hint: ip_address
   - name: SVC_ROUTE_INTF
     description: service route interface if management not used for service interactions
     default: loopback.1
