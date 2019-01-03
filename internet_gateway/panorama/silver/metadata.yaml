@@ -3,7 +3,7 @@
 # xml snippets not in the local directory pull from the gold master set of snippets
 
 name: silver_panorama
-label: Silver (panorama)
+label: Silver
 description: Silver Advanced Security
 type: panorama
 extends: internet_gateway_base_panorama
