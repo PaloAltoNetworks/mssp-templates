@@ -9,7 +9,7 @@ type: panorama
 extends: internet_gateway_base_panorama
 
 labels:
-  service_type: internet_gateway
+  service_type: internet_gateway_panorama
 
 variables:
   - name: FW_NAME
