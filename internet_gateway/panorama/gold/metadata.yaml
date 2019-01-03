@@ -3,7 +3,7 @@
 # this is the master directory for xml snippets shared by silver and bronze
 
 name: gold_panorama
-label: Gold
+label: Gold (panorama)
 description: Gold Advanced Security
 type: panorama
 extends: internet_gateway_base

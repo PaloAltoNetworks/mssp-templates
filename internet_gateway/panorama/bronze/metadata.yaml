@@ -3,7 +3,7 @@
 # xml snippets not in the local directory pull from the gold master set of snippets
 
 name: bronze_panorama
-label: Bronze
+label: Bronze (panorama)
 description: Bronze Basic Security
 type: service
 extends: internet_gateway_base
