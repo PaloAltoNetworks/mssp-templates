@@ -2,9 +2,9 @@
 # requires ignoring the Palo Alto Networks published EDL rules from iron-skillet
 # xml snippets not in the local directory pull from the gold master set of snippets
 
-name: bronze
+name: bronze_panos
 label: Bronze
-description: Bronze Basic Security
+description: Bronze Basic Security panos
 type: service
 extends: internet_gateway_base
 
@@ -50,9 +50,9 @@ variables:
 
 snippets:
   - name: tag
-    xpath: /config/devices/entry[@name='localhost.localdomain']/device-group/entry[@name='{{ FW_NAME }}']/tag
+    xpath: /config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/tag
     file: tag.xml
   - name: security_rules-security-rules-bronze
-    xpath: /config/devices/entry[@name='localhost.localdomain']/device-group/entry[@name='{{ FW_NAME }}']/post-rulebase/security
+    xpath: /config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/rulebase/security
     file: security_rules_bronze.xml
 

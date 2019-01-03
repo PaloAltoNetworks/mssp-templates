@@ -2,10 +2,10 @@
 # compatible with iron-skillet configs but NOT BEST PRACTICE due to lack or URL and WF
 # xml snippets not in the local directory pull from the gold master set of snippets
 
-name: silver
+name: silver_panos
 label: Silver
-description: Silver Advanced Security
-type: service
+description: Silver Advanced Security panos
+type: panos
 extends: internet_gateway_base
 
 labels:
@@ -39,8 +39,8 @@ variables:
 
 snippets:
   - name: tag
-    xpath: /config/devices/entry[@name='localhost.localdomain']/device-group/entry[@name='{{ FW_NAME }}']/tag
+    xpath: /config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/tag
     file: tag.xml
   - name: security_rules-security-rules-silver
-    xpath: /config/devices/entry[@name='localhost.localdomain']/device-group/entry[@name='{{ FW_NAME }}']/post-rulebase/security
+    xpath: /config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/rulebase/security
     file: security_rules_silver.xml
