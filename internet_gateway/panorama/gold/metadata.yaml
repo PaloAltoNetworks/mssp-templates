@@ -6,7 +6,7 @@ name: gold_panorama
 label: Gold (panorama)
 description: Gold Advanced Security
 type: panorama
-extends: internet_gateway_base
+extends: internet_gateway_base_panorama
 
 labels:
   service_type: internet_gateway

@@ -6,7 +6,7 @@ name: silver_panorama
 label: Silver (panorama)
 description: Silver Advanced Security
 type: service
-extends: internet_gateway_base
+extends: internet_gateway_base_panorama
 
 labels:
   service_type: internet_gateway

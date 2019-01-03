@@ -1,8 +1,8 @@
-name: internet_gateway_base
+name: internet_gateway_base_panos
 label: Internet Gateway Base Snippets
 description: Internet Gateway Base
 type: baseline
-extends: snippets_panorama_dgstack_notshared
+extends: snippets_panos
 
 labels:
   service_type: internet_gateway_base

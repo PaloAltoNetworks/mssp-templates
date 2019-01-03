@@ -6,7 +6,7 @@ name: silver_panos
 label: Silver
 description: Silver Advanced Security panos
 type: panos
-extends: internet_gateway_base
+extends: internet_gateway_base_panos
 
 labels:
   service_type: internet_gateway

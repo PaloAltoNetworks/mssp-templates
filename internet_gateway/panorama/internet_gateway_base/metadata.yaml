@@ -1,4 +1,4 @@
-name: internet_gateway_base
+name: internet_gateway_base_panorama
 label: Internet Gateway Base Snippets
 description: Internet Gateway Base
 type: baseline
