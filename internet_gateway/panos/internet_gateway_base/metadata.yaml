@@ -5,7 +5,7 @@ type: baseline
 extends: snippets_panos
 
 labels:
-  service_type: internet_gateway_base
+  service_type: internet_gateway_base_panos
 
 variables:
   - name: FW_NAME
