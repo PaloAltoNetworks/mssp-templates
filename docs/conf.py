@@ -158,8 +158,8 @@ texinfo_documents = [
 
 # github file path that changes across repo and branches
 
-extlinks = {'panosrepo': ('https://github.com/PaloAltoNetworks/mssp-templates/blob/81dev/templates/panos/snippets/%s.xml', 'view xml template:   '),
-            'panoramarepo': ('https://github.com/PaloAltoNetworks/mssp-templates/blob/81dev/templates/panorama/snippets/%s.xml', 'view xml template:   '),
+extlinks = {'panosrepo': ('https://github.com/scotchoaf/mssp-templates/tree/81dev/internet_gateway/panos/%s', 'PAN-OS template:   '),
+            'panoramarepo': ('https://github.com/scotchoaf/mssp-templates/tree/81dev/internet_gateway/panorama/%s', 'Panorama template:   '),
             'setcommands': ('https://github.com/PaloAltoNetworks/mssp-templates/tree/81dev/templates/%s/set_commands', 'set commands '),
             }
 
@@ -167,8 +167,7 @@ extlinks = {'panosrepo': ('https://github.com/PaloAltoNetworks/mssp-templates/bl
 
 rst_prolog = """
 .. |branch| replace:: 81dev
-.. |panosconfigfile| replace:: iron_skillet_panos_full.xml
-.. |panoramaconfigfile| replace:: iron_skillet_panorama_full.xml
+.. |skilletdocs| replace:: https://iron-skillet.readthedocs.io/en/81dev/
 .. |clonessh| replace:: git@github.com:PaloAltoNetworks/mssp-templates.git
 .. |clonehttps| replace:: https://github.com/PaloAltoNetworks/mssp-templates.git
 .. |repourl| replace:: https://github.com/PaloAltoNetworks/mssp-templates/tree/81dev
@@ -181,5 +180,7 @@ rst_prolog = """
 .. |panoramaloadorder| replace:: https://github.com/PaloAltoNetworks/mssp-templates/blob/81dev/templates/panorama/snippets/metadata.yaml
 .. |panoramaset| replace:: https://github.com/PaloAltoNetworks/mssp-templates/tree/81dev/templates/panorama/set_commands
 .. |panosset| replace:: https://github.com/PaloAltoNetworks/mssp-templates/tree/81dev/templates/panos/set_commands
+.. |skilletpanoramatemplates| replace:: https://iron-skillet.readthedocs.io/en/81dev/panorama_template_guide.html
+.. |skilletpanostemplates| replace: https://iron-skillet.readthedocs.io/en/81dev/panos_template_guide.html
 """
 

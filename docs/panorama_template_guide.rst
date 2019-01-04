@@ -1,75 +1,57 @@
 
-Panorama templates
-==================
+Internet Gateway Templates
+==========================
 
 The configuration snippet descriptions and the associated GitHub
 repository link for each xml snippet.
 
-Panorama can be configured using shared elements and device-specific elements. For xml configurations the use of shared
-or device-specific configurations is based on the xpath location of the snippets. Set commmands also denote shared or
-device-specific configurations. The provided xml snippets have variations in the metadata.yaml files specifying shared
-or device-specific placement in the configuration while the set commands and default loadable configuration are shared only.
-
-**Grouping of XML snippets**
-
-The xml template directories are group according to the user environment:
-
-    + `snippets_panorama`: A full Panorama configuration using shared device-group and template configurations
-
-
-    + `snippets_panorama_dgstack_shared`: used to add additional device-groups and stacks based on the shared model
-
-
-    + `snippets_panorama_not_shared`: a full Panorama configuration with the device-group and stack containing all configuration elements. Nothing is shared.
-
-
-    + `snippets_panorama_dgstack_notshared`: used to add additional device-groups and stack, each with full configuration elements. Nothing is shared.
-
+Panorama can be configured using shared elements and device-specific elements. The MSSP templates are based on a non-shared
+model to isolate each customer configuration. Deployments requiring shared or mixed models will need to edit the templates
+specific to their environment.
 
 
 .. Note::
     The template version is found in the template xml file as a tag attribute
 
 
-.. Note::
-    The set commands utilize the same configuration settings
+The templates are incremental to and reference the iron-skillet day one configurations. The details of the iron-skillet
+templates can be found at: |skilletpanoramatemplates|.
 
 
-General Device Configuration
-----------------------------
+Internet Gateway Baseline
+-------------------------
 
 ----------------------------------------------------------------------
 
-This section provides templated configurations for general device
-settings.
+This section provides templated configurations for network elements used by Gold, Silver, and Bronze services.
 
-Panorama settings
-~~~~~~~~~~~~~~~~~
+Interface settings
+~~~~~~~~~~~~~~~~~~
 
-:panoramarepo:`panorama_system`
+:panoramarepo:`internet_gateway_base/interface.xml`
 
-System configuration settings for dynamic updates and network services
-(eg. DNS, NTP).
+:panosrepo:`internet_gateway_base/interface.xml`
 
-    + Update schedule settings
+Sample interface configurations with one for external/untrust and one internal/trust.
 
-        * Turn on all telemetry settings
-        * Check every 30 minutes for new threat signatures
-        * Hourly checks for new AV signatures
-        * Check every minute for new Wildfire signatures
-        * Recommended time delays and thresholds for checks and installs
+    + untrust interface uses DHCP
 
-    + Use SNMPv3
+    + trust interface is uses a static IP configuration
 
-    + Set default DNS and NTP values
+    + the interface names and the trust IP address are variables to adjust as needed
 
-    + Set timezone to UTC
 
-    + Provide a standard login banner warning for unauthorized users
+Zones
+~~~~~
 
-.. Note::
-    The Panorama deployment types include ```standard``` or ```cloud``` for AWS, Azure, or GCP environments.
-    This is an option in the tools ```build_my_config``` utility to use the proper config option in the template.
+
+:panoramarepo:`internet_gateway_base/zone.xml`
+
+:panosrepo:`internet_gateway_base/zone.xml`
+
+
+Two zones are provided in the template, default values set to trust and internet.
+
 
 
 :panoramarepo:`panorama_setting`
