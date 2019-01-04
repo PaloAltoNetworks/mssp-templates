@@ -11,8 +11,8 @@ Welcome to Iron Skillet template documentation!
    :caption: Contents:
 
    overview
-   template_format
    internet_gateway_templates
    using_the_spreadsheet
    gpcs_templates
+   template_format
    release_history

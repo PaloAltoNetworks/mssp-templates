@@ -30,6 +30,7 @@ Instead of a complete set of configuration snippets, the MSSP templates are incr
 best practice configurations.
 
 More information about Iron-Skillet can be found at:
+
 |skilletdocs|
 
 

@@ -160,7 +160,7 @@ texinfo_documents = [
 
 extlinks = {'panosrepo': ('https://github.com/scotchoaf/mssp-templates/tree/81dev/internet_gateway/panos/%s', 'PAN-OS template:   '),
             'panoramarepo': ('https://github.com/scotchoaf/mssp-templates/tree/81dev/internet_gateway/panorama/%s', 'Panorama template:   '),
-            'setcommands': ('https://github.com/PaloAltoNetworks/mssp-templates/tree/81dev/templates/%s/set_commands', 'set commands '),
+            'setcommands': ('https://github.com/scotchoaf/mssp-templates/tree/81dev/internet_gateway/%s/set_commands', 'set commands '),
             }
 
 # load config file name that changes across repo and branches

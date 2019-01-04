@@ -10,7 +10,9 @@ specific to their environment.
 
 
 The templates are incremental to and reference the iron-skillet day one configurations. The details of the iron-skillet
-templates can be found at: |skilletpanoramatemplates|.
+templates can be found at:
+
+|skilletpanoramatemplates|.
 
 The metadata.yaml files in each configuration directory contain:
 

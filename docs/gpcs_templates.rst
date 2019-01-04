@@ -14,7 +14,9 @@ The GPCS templates are provided for 3 deployment needs:
 
 
 The templates are incremental to and reference the iron-skillet day one configurations. The details of the iron-skillet
-templates can be found at: |skilletpanoramatemplates|.
+templates can be found at:
+
+|skilletpanoramatemplates|.
 
 The metadata.yaml files in each configuration directory contain:
 
@@ -104,7 +106,7 @@ Onboarding elements for a new remote site including:
 
 
 GPCS CPE Tunnel Configuration
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------
 
 :panoramarepo:`gpcs/cpe_configs`
 
