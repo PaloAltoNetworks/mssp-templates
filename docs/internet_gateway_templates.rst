@@ -2,16 +2,11 @@
 Internet Gateway Templates
 ==========================
 
-The configuration snippet descriptions and the associated GitHub
-repository link for each xml snippet.
+The configuration snippet descriptions and the associated GitHub repository link for each xml snippet.
 
 Panorama can be configured using shared elements and device-specific elements. The MSSP templates are based on a non-shared
 model to isolate each customer configuration. Deployments requiring shared or mixed models will need to edit the templates
 specific to their environment.
-
-
-.. Note::
-    The template version is found in the template xml file as a tag attribute
 
 
 The templates are incremental to and reference the iron-skillet day one configurations. The details of the iron-skillet
@@ -22,6 +17,10 @@ The metadata.yaml files in each configuration directory contain:
     + list of variables and default values
 
     + load order including the xpaths and snippet file names
+
+.. Note::
+    SET commands are also included with the panos templates for users requiring quick configuration to sandbox or test.
+    These can also be used for network deployments where Panorama is not leveraged.
 
 
 Internet Gateway Baseline
