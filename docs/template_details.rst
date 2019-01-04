@@ -17,6 +17,12 @@ specific to their environment.
 The templates are incremental to and reference the iron-skillet day one configurations. The details of the iron-skillet
 templates can be found at: |skilletpanoramatemplates|.
 
+The metadata.yaml files in each configuration directory contain:
+
+    + list of variables and default values
+
+    + load order including the xpaths and snippet file names
+
 
 Internet Gateway Baseline
 -------------------------
@@ -24,6 +30,10 @@ Internet Gateway Baseline
 ----------------------------------------------------------------------
 
 This section provides templated configurations for network elements used by Gold, Silver, and Bronze services.
+
+The Internet gateway deployment is a 2-zone, 2-interface model with IP routing.
+
+
 
 Interface settings
 ~~~~~~~~~~~~~~~~~~
@@ -50,8 +60,19 @@ Zones
 :panosrepo:`internet_gateway_base/zone.xml`
 
 
-Two zones are provided in the template, default values set to trust and internet.
+Two zones are provided in the template. The names are variables with default values set to trust and internet.
 
+
+Zone Import Interface
+~~~~~~~~~~~~~~~~~~~~~
+
+
+:panoramarepo:`internet_gateway_base/zone.xml`
+
+:panosrepo:`internet_gateway_base/zone.xml`
+
+
+Although not seen in the GUI or CLI configuration, the xml loading requires this mapping to associate interfaces to zones.
 
 
 :panoramarepo:`panorama_setting`
