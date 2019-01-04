@@ -2,7 +2,7 @@ name: gpcs_baseline
 label: GPCS Baseline Configuration
 description: GPCS Cloud Security Service
 type: panorama-gpcs
-extends:
+extends: snippets_panorama
 
 labels:
   service_type: gpcs
@@ -14,7 +14,11 @@ variables:
     type_hint: ip_address
   - name: ZONE_TRUST
     description: Trust zones for GPCS
-    default: L3-trust
+    default: trust
+    type_hint: text
+  - name: ZONE_UNTRUST
+    description: Trust zones for GPCS
+    default: untrust
     type_hint: text
 
 
@@ -31,6 +35,9 @@ snippets:
   - name: remote_network_devicegroup
     xpath: /config/devices/entry[@name='localhost.localdomain']/device-group
     file: gpcs_devicegroup.xml
-#  - name: trusted_zone
-#    xpath: /config/devices/entry[@name='localhost.localdomain']/plugins/cloud_services/remote-networks/trusted-zones
-#    file: trusted_zone.xml
+  - name: zone
+    xpath: /config/devices/entry[@name='localhost.localdomain']/template-stack/entry[@name='Remote_Network_Template_Stack']/config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/zone
+    file: zone.xml
+  - name: trusted_zone
+    xpath: /config/devices/entry[@name='localhost.localdomain']/plugins/cloud_services/remote-networks/trusted-zones
+    file: trusted_zone.xml
