@@ -31,6 +31,6 @@ snippets:
   - name: remote_network_devicegroup
     xpath: /config/devices/entry[@name='localhost.localdomain']/device-group
     file: gpcs_devicegroup.xml
-  - name: trusted_zone
-    xpath: /config/devices/entry[@name='localhost.localdomain']/plugins/cloud_services/remote-networks/trusted-zones
-    file: trusted_zone.xml
+#  - name: trusted_zone
+#    xpath: /config/devices/entry[@name='localhost.localdomain']/plugins/cloud_services/remote-networks/trusted-zones
+#    file: trusted_zone.xml
