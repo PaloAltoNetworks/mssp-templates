@@ -1,0 +1,36 @@
+name: gpcs_baseline
+label: GPCS Baseline Configuration
+description: GPCS Cloud Security Service
+type: panorama-gpcs
+extends:
+
+labels:
+  service_type: gpcs
+
+variables:
+  - name: GPCS_IP
+    description: Subnet infrastructure IP
+    default: 192.168.250.0/24
+    type_hint: ip_address
+  - name: ZONE_TRUST
+    description: Trust zones for GPCS
+    default: L3-trust
+    type_hint: text
+
+
+snippets:
+  - name: service_connection
+    xpath: /config/devices/entry[@name='localhost.localdomain']/plugins/cloud_services/
+    file: service_connection.xml
+  - name: gpcs_templates
+    xpath: /config/devices/entry[@name='localhost.localdomain']/template
+    file: gpcs_templates.xml
+  - name: gpcs_template_stacks
+    xpath: /config/devices/entry[@name='localhost.localdomain']/template-stack
+    file: gpcs_template_stacks.xml
+  - name: remote_network_devicegroup
+    xpath: /config/devices/entry[@name='localhost.localdomain']/device-group
+    file: gpcs_devicegroup.xml
+  - name: trusted_zone
+    xpath: /config/devices/entry[@name='localhost.localdomain']/plugins/cloud_services/remote-networks/
+    file: trusted_zone.xml
