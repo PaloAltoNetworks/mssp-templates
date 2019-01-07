@@ -1,7 +1,7 @@
 MSSP Templates Overview
 =======================
 
-The MSSP templates are provided to simplify the deployment of security services. Instead of extensive and detailed 'how to'
+The Palo Alto Networks MSSP templates are provided to simplify the deployment of security services. Instead of extensive and detailed 'how to'
 documentation, the MSSP templates provide an easy to implement configuration model.
 
 The benefits of this template model include:
