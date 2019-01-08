@@ -2,14 +2,14 @@
 # includes an additional security rule for strict file blocking of unknown url category
 # this is the master directory for xml snippets shared by silver and bronze
 
-name: gold
+name: gold_panos
 label: Gold
-description: Gold Advanced Security
-type: panorama
-extends: internet_gateway_base
+description: Gold Advanced Security panos
+type: panos
+extends: internet_gateway_base_panos
 
 labels:
-  service_type: internet_gateway
+  service_type: internet_gateway_panos
 
 variables:
   - name: FW_NAME
@@ -39,13 +39,13 @@ variables:
 
 snippets:
   - name: profile_group_unknown_url
-    xpath: /config/devices/entry[@name='localhost.localdomain']/device-group/entry[@name='{{ FW_NAME }}']/profile-group
+    xpath: /config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/profile-group
     file: profile_group_unknown_url.xml
   - name: tag
-    xpath: /config/devices/entry[@name='localhost.localdomain']/device-group/entry[@name='{{ FW_NAME }}']/tag
+    xpath: /config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/tag
     file: tag.xml
   - name: security_rules-security-rules-gold
-    xpath: /config/devices/entry[@name='localhost.localdomain']/device-group/entry[@name='{{ FW_NAME }}']/post-rulebase/security
+    xpath: /config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/rulebase/security
     file: security_rules_gold.xml
 
 
