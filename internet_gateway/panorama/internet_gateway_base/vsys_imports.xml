@@ -1,0 +1,12 @@
+ <network>
+  <interface>
+    <member>{{ INTF_UNTRUST }}</member>
+    <member>{{ INTF_TRUST }}</member>
+  </interface>
+  <virtual-router>
+    <member>default</member>
+  </virtual-router>
+</network>
+
+
+

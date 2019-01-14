@@ -52,9 +52,9 @@ snippets:
   - name: virtual_router
     xpath: /config/devices/entry[@name='localhost.localdomain']/template/entry[@name='{{ IG_BASE_TPL }}']/config/devices/entry[@name='localhost.localdomain']/network/virtual-router
     file: virtual_router.xml
-  - name: import_zone_interface
+  - name: vsys_imports
     xpath: /config/devices/entry[@name='localhost.localdomain']/template/entry[@name='{{ IG_BASE_TPL }}']/config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/import
-    file: zone_import_interface.xml
+    file: vsys_imports.xml
   - name: zone
     xpath: /config/devices/entry[@name='localhost.localdomain']/template/entry[@name='{{ IG_BASE_TPL }}']/config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/zone
     file: zone.xml
