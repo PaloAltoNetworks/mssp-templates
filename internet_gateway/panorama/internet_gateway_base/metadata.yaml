@@ -56,10 +56,10 @@ snippets:
     xpath: /config/devices/entry[@name='localhost.localdomain']/template/entry[@name='{{ IG_BASE_TPL }}']/config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/import
     file: vsys_imports.xml
   - name: zone
-    xpath: /config/devices/entry[@name='localhost.localdomain']/template/entry[@name='{{ IG_BASE_TPL }}']/config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/zone
+    xpath: /config/devices/entry[@name='localhost.localdomain']/template-stack/entry[@name='{{ STACK }}']/config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/zone
     file: zone.xml
   - name: nat-source-nat-to-untrust
-    xpath: /config/devices/entry[@name='localhost.localdomain']/device-group/entry[@name='{{ FW_NAME }}']/post-rulebase/nat
+    xpath: /config/devices/entry[@name='localhost.localdomain']/device-group/entry[@name='{{ DEVICE_GROUP }}']/post-rulebase/nat
     file: source_nat_to_untrust.xml
 
 
