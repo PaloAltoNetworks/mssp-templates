@@ -8,6 +8,9 @@ labels:
   service_type: internet_gateway_base
 
 variables:
+  - name: IG_BASE_TPL
+    description: baseline template for internet gateway
+    default: ig_base_tpl
   - name: FW_NAME
     description: Device Name
     default: panos-01
@@ -34,20 +37,26 @@ variables:
     type_hint: text
 
 snippets:
+  - name: template
+    xpath: /config/devices/entry[@name='localhost.localdomain']/template
+    file: ../snippets/template.xml
+  - name: stack
+    xpath: /config/devices/entry[@name='localhost.localdomain']/template-stack
+    file: ../snippets/template_stack.xml
   - name: network_profiles-network-profiles
-    xpath: /config/devices/entry[@name='localhost.localdomain']/template-stack/entry[@name='{{ FW_NAME }}']/config/devices/entry[@name='localhost.localdomain']/network/profiles
+    xpath: /config/devices/entry[@name='localhost.localdomain']/template/entry[@name='{{ IG_BASE_TPL }}']/config/devices/entry[@name='localhost.localdomain']/network/profiles
     file: network_profiles.xml
   - name: interface
-    xpath: /config/devices/entry[@name='localhost.localdomain']/template-stack/entry[@name='{{ FW_NAME }}']/config/devices/entry[@name='localhost.localdomain']/network/interface
+    xpath: /config/devices/entry[@name='localhost.localdomain']/template/entry[@name='{{ IG_BASE_TPL }}']/config/devices/entry[@name='localhost.localdomain']/network/interface
     file: interface.xml
   - name: virtual_router
-    xpath: /config/devices/entry[@name='localhost.localdomain']/template-stack/entry[@name='{{ FW_NAME }}']/config/devices/entry[@name='localhost.localdomain']/network/virtual-router
+    xpath: /config/devices/entry[@name='localhost.localdomain']/template/entry[@name='{{ IG_BASE_TPL }}']/config/devices/entry[@name='localhost.localdomain']/network/virtual-router
     file: virtual_router.xml
   - name: import_zone_interface
-    xpath: /config/devices/entry[@name='localhost.localdomain']/template-stack/entry[@name='{{ FW_NAME }}']/config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/import
+    xpath: /config/devices/entry[@name='localhost.localdomain']/template/entry[@name='{{ IG_BASE_TPL }}']/config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/import
     file: zone_import_interface.xml
   - name: zone
-    xpath: /config/devices/entry[@name='localhost.localdomain']/template-stack/entry[@name='{{ FW_NAME }}']/config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/zone
+    xpath: /config/devices/entry[@name='localhost.localdomain']/template/entry[@name='{{ IG_BASE_TPL }}']/config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/zone
     file: zone.xml
   - name: nat-source-nat-to-untrust
     xpath: /config/devices/entry[@name='localhost.localdomain']/device-group/entry[@name='{{ FW_NAME }}']/post-rulebase/nat
