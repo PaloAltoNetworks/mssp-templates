@@ -1,4 +1,4 @@
-<entry name="IG_BASE_TPL">
+<entry name="{{ IG_BASE_TPL }}">
   <settings>
     <default-vsys>vsys1</default-vsys>
   </settings>
