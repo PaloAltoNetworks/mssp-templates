@@ -1,0 +1,14 @@
+<ethernet>
+    <entry name="{{ INTF_UNTRUST }}">
+      <layer3>
+        <dhcp-client/>
+      </layer3>
+    </entry>
+    <entry name="{{ INTF_TRUST }}">
+      <layer3>
+        <ip>
+          <entry name="{{ IP_12 }}"/>
+        </ip>
+      </layer3>
+    </entry>
+</ethernet>
