@@ -4,12 +4,12 @@ Template Format
 
 The snippet directories are based on a common modeling including:
 
-    + a metadata.yaml file
+    + a .meta-cnc.yaml file
 
     + xml config snippets
 
 
-The metadata.yaml file
+The .meta-cnc.yaml file
 ----------------------
 
 This file contains descriptive elements for loading the xml snippets using the Panorama or PAN-OS API.
@@ -37,9 +37,9 @@ XML file snippets
 -----------------
 A complete set of xml elements to be loaded as part of the temmplate configuration.
 
-    + any variables required must be added to the metadata.yaml file if used by configuration tools
+    + any variables required must be added to the .meta-cnc.yaml file if used by configuration tools
 
-    + the filenames are referenced in the snippets section of the metadata.yaml file
+    + the filenames are referenced in the snippets section of the .meta-cnc.yaml file
 
 
 .. Note::
