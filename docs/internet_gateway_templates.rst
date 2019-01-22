@@ -14,7 +14,7 @@ templates can be found at:
 
 |skilletpanoramatemplates|.
 
-The metadata.yaml files in each configuration directory contain:
+The .meta-cnc.yaml file in each configuration directory contains:
 
     + list of variables and default values
 
@@ -39,7 +39,8 @@ The Internet gateway deployment is a 2-zone, 2-interface model with IP routing.
 Interface settings
 ~~~~~~~~~~~~~~~~~~
 
-:panoramarepo:`internet_gateway_base/interface.xml`
+:panoramarepo:`internet_gateway_base/interface_template.xml`
+:panoramarepo:`internet_gateway_base/interface_stack.xml`
 
 :panosrepo:`internet_gateway_base/interface.xml`
 
@@ -50,6 +51,12 @@ Sample interface configurations with one for external/untrust and one internal/t
     + trust interface is uses a static IP configuration
 
     + the interface names and the trust IP address are variables to adjust as needed
+
+
+.. Note::
+    The Panorama template is an extension of Iron-Skillet and includes network elements including interfaces and zones.
+    Thus this model uses 2 templates (skillet and internet gateway) with zones and address override in the stack. The
+    internet gateway (ig) template is required to add the interface while the stack is required to associate to a device.
 
 
 Zones
@@ -64,13 +71,13 @@ Zones
 Two zones are provided in the template. The names are variables with default values set to trust and internet.
 
 
-Zone Import Interface
-~~~~~~~~~~~~~~~~~~~~~
+Vsys Import
+~~~~~~~~~~~
 
 
-:panoramarepo:`internet_gateway_base/zone.xml`
+:panoramarepo:`internet_gateway_base/vsys_imports.xml`
 
-:panosrepo:`internet_gateway_base/zone.xml`
+:panosrepo:`internet_gateway_base/vsys_imports.xml`
 
 
 Although not seen in the GUI or CLI configuration, the xml loading requires this mapping to associate interfaces to zones.

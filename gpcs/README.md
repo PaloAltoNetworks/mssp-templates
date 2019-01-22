@@ -19,9 +19,9 @@ plugin installed and licensed.
 
 ### Optional: Gold MSSP Internet Gateway Rules
 
-The metadata.yaml file includes the MSSP Internet gateway security rules
+The .meta-cnc.yaml file includes the MSSP Internet gateway security rules
 that can be loaded as part of the baseline configuration.
 
 Based on template requirements, these rules can be commented out or deleted
-from the metadata.yaml file. Additional, other security policies can be added
+from the .meta-cnc.yaml file. Additional, other security policies can be added
 as required.

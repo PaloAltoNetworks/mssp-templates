@@ -50,7 +50,7 @@ def create_spreadsheet(config_type):
     sys.path.append(set_path)
 
     set_file = '{0}/internet_gateway_set.conf'.format(set_path, config_type)
-    config_variables = '{0}/metadata.yaml'.format(set_path)
+    config_variables = '{0}/.meta-cnc.yaml'.format(set_path)
 
     print('creating workbook based on {0}'.format(set_file))
     # Create a workbook and add worksheets.

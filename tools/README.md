@@ -21,7 +21,7 @@ pip install -r requirements.txt
 
 ### create_set_spreadsheet.py
 Reads the set command .conf files in `internet_gateway/panos/set_commands`
-along with the associated metadata.yaml file
+along with the associated .meta-cnc.yaml file
 to generate a formula-based Excel spreadsheet of loadable set commands.
 
 Output is in the same set_commands directory.

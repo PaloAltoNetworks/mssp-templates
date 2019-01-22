@@ -18,7 +18,7 @@ templates can be found at:
 
 |skilletpanoramatemplates|.
 
-The metadata.yaml files in each configuration directory contain:
+The .meta-cnc.yaml files in each configuration directory contain:
 
     + list of variables and default values
 
