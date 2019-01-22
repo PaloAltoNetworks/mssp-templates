@@ -158,28 +158,29 @@ texinfo_documents = [
 
 # github file path that changes across repo and branches
 
-extlinks = {'panosrepo': ('https://github.com/PaloAltoNetworks/mssp-templates/blob/81dev/templates/panos/snippets/%s.xml', 'view xml template:   '),
-            'panoramarepo': ('https://github.com/PaloAltoNetworks/mssp-templates/blob/81dev/templates/panorama/snippets/%s.xml', 'view xml template:   '),
-            'setcommands': ('https://github.com/PaloAltoNetworks/mssp-templates/tree/81dev/templates/%s/set_commands', 'set commands '),
+extlinks = {'panosrepo': ('https://github.com/scotchoaf/mssp-templates/tree/80dev/internet_gateway/panos/%s', 'PAN-OS template:   '),
+            'panoramarepo': ('https://github.com/scotchoaf/mssp-templates/tree/80dev/internet_gateway/panorama/%s', 'Panorama template:   '),
+            'setcommands': ('https://github.com/scotchoaf/mssp-templates/tree/80dev/internet_gateway/%s/set_commands', 'set commands '),
             }
 
 # load config file name that changes across repo and branches
 
 rst_prolog = """
-.. |branch| replace:: 81dev
-.. |panosconfigfile| replace:: iron_skillet_panos_full.xml
-.. |panoramaconfigfile| replace:: iron_skillet_panorama_full.xml
+.. |branch| replace:: 80dev
+.. |skilletdocs| replace:: https://iron-skillet.readthedocs.io/en/80dev/
 .. |clonessh| replace:: git@github.com:PaloAltoNetworks/mssp-templates.git
 .. |clonehttps| replace:: https://github.com/PaloAltoNetworks/mssp-templates.git
-.. |repourl| replace:: https://github.com/PaloAltoNetworks/mssp-templates/tree/81dev
-.. |repotools| replace:: https://github.com/PaloAltoNetworks/mssp-templates/tree/81dev/tools
-.. |panosxpaths| replace:: https://github.com/PaloAltoNetworks/mssp-templates/blob/81dev/templates/panos/snippets/metadata.yaml
-.. |panossnippets| replace:: https://github.com/PaloAltoNetworks/mssp-templates/tree/81dev/templates/panos/snippets
-.. |panosloadorder| replace:: https://github.com/PaloAltoNetworks/mssp-templates/blob/81dev/templates/panos/snippets/metadata.yaml
-.. |panoramaxpaths| replace:: https://github.com/PaloAltoNetworks/mssp-templates/blob/81dev/templates/panorama/snippets/metadata.yaml
-.. |panoramasnippets| replace:: https://github.com/PaloAltoNetworks/mssp-templates/tree/81dev/templates/panorama/snippets
-.. |panoramaloadorder| replace:: https://github.com/PaloAltoNetworks/mssp-templates/blob/81dev/templates/panorama/snippets/metadata.yaml
-.. |panoramaset| replace:: https://github.com/PaloAltoNetworks/mssp-templates/tree/81dev/templates/panorama/set_commands
-.. |panosset| replace:: https://github.com/PaloAltoNetworks/mssp-templates/tree/81dev/templates/panos/set_commands
+.. |repourl| replace:: https://github.com/PaloAltoNetworks/mssp-templates/tree/80dev
+.. |repotools| replace:: https://github.com/PaloAltoNetworks/mssp-templates/tree/80dev/tools
+.. |panosxpaths| replace:: https://github.com/PaloAltoNetworks/mssp-templates/blob/80dev/templates/panos/snippets/.meta-cnc.yaml
+.. |panossnippets| replace:: https://github.com/PaloAltoNetworks/mssp-templates/tree/80dev/templates/panos/snippets
+.. |panosloadorder| replace:: https://github.com/PaloAltoNetworks/mssp-templates/blob/80dev/templates/panos/snippets/.meta-cnc.yaml
+.. |panoramaxpaths| replace:: https://github.com/PaloAltoNetworks/mssp-templates/blob/80dev/templates/panorama/snippets/.meta-cnc.yaml
+.. |panoramasnippets| replace:: https://github.com/PaloAltoNetworks/mssp-templates/tree/80dev/templates/panorama/snippets
+.. |panoramaloadorder| replace:: https://github.com/PaloAltoNetworks/mssp-templates/blob/80dev/templates/panorama/snippets/.meta-cnc.yaml
+.. |panoramaset| replace:: https://github.com/PaloAltoNetworks/mssp-templates/tree/80dev/templates/panorama/set_commands
+.. |panosset| replace:: https://github.com/PaloAltoNetworks/mssp-templates/tree/80dev/templates/panos/set_commands
+.. |skilletpanoramatemplates| replace:: https://iron-skillet.readthedocs.io/en/80dev/panorama_template_guide.html
+.. |skilletpanostemplates| replace: https://iron-skillet.readthedocs.io/en/80dev/panos_template_guide.html
 """
 

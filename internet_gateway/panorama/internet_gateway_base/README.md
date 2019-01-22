@@ -4,7 +4,9 @@ This set of snippets are loaded prior to the security tier selection.
 
 The snippets included are:
 
-* interface: simple dual interface Internet Gateway model
+* interface (template): interface elements loaded into the base template
+
+* interface (stack): zone and additional elements at the stack level
 
 * virtual router: sets of basic routing with a default-gateway to the internet
 
@@ -16,7 +18,8 @@ The snippets included are:
 
 The MSSP can edit/append as required for their specific deployments.
 
-**NOTE**: The `zone_import_interface` snippet is used to create a mapping
-of interfaces and zones. This element is managed by the system when doing
-standard GUI/CLI edits yet required for a working xml configuration.
+**NOTE**: The `vsys_imports` snippet is used to create a mapping
+of interfaces, zones, and the virtual router. This element is managed by
+the system when doing standard GUI/CLI edits yet required for a working
+xml configuration.
 

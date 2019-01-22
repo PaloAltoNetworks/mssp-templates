@@ -7,7 +7,7 @@ For users who want to customize their configuration before loading without the u
 model for configuration.
 
 
-The spreadsheets can be found at :setcommands:`panos` and :setcommands:`panorama`
+The spreadsheet can be found at :setcommands:`panos`
 
 
 The ``values`` worksheet can be updated with user-specific values. Formulas embedded in the ``set commands`` worksheet

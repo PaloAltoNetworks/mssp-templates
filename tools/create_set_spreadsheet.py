@@ -12,10 +12,10 @@
 # ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 # OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-# Author: Nathan Embery <nembery@paloaltonetworks.com>
+# Author: Scott Shoaf <sshoaf@paloaltonetworks.com>
 
 '''
-Palo Alto Networks MSSP tempalte create_set_spreadsheet
+Palo Alto Networks MSSP template create_set_spreadsheet
 
 This tool turns the set-based template file into a formula-based spreadsheet
 This template can then be customized and applied to a new out-of-the-box PanOS NGFW or Panorama
@@ -44,17 +44,18 @@ def create_spreadsheet(config_type):
 
 
     # get the full path to the config directory we want (panos / panorama)
-    set_path = os.path.abspath(os.path.join('..', 'internet_gateway', 'set_commands'))
+    set_path = os.path.abspath(os.path.join('..', 'internet_gateway'))
 
     # append to the sys path for module lookup
     sys.path.append(set_path)
 
-    set_file = '{0}/internet_gateway_set.conf'.format(set_path, config_type)
-    config_variables = '{0}/metadata.yaml'.format(set_path)
+    set_file = '{0}/{1}/set_commands/internet_gateway_set.conf'.format(set_path, config_type)
+    config_variables = '{0}/{1}/set_commands/.meta-cnc.yaml'.format(set_path, config_type)
 
     print('creating workbook based on {0}'.format(set_file))
+    print('using variables from {0}'.format(config_variables))
     # Create a workbook and add worksheets.
-    workbook = xlsxwriter.Workbook('{0}/internet_gateway_gsb.xlsx'.format(set_path))
+    workbook = xlsxwriter.Workbook('{0}/{1}/set_commands/internet_gateway_gsb.xlsx'.format(set_path, config_type))
 
     # add columns and format width
     worksheet_values = workbook.add_worksheet('values')
