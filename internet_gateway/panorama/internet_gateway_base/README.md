@@ -6,8 +6,6 @@ The snippets included are:
 
 * interface (template): interface elements loaded into the base template
 
-* interface (stack): zone and additional elements at the stack level
-
 * virtual router: sets of basic routing with a default-gateway to the internet
 
 * zone: 2-zone model with internet and trust zones
