@@ -158,6 +158,7 @@ texinfo_documents = [
 
 # github file path that changes across repo and branches
 
+
 extlinks = {'panosrepo': ('https://github.com/PaloAltoNetworks/mssp-templates/blob/panos_v8.0/templates/panos/snippets/%s.xml', 'view xml template:   '),
             'panoramarepo': ('https://github.com/PaloAltoNetworks/mssp-templates/blob/panos_v8.0/templates/panorama/snippets/%s.xml', 'view xml template:   '),
             'setcommands': ('https://github.com/PaloAltoNetworks/mssp-templates/tree/panos_v8.0/templates/%s/set_commands', 'set commands '),
@@ -166,6 +167,7 @@ extlinks = {'panosrepo': ('https://github.com/PaloAltoNetworks/mssp-templates/bl
 # load config file name that changes across repo and branches
 
 rst_prolog = """
+
 .. |branch| replace:: panos_v8.0
 .. |panosconfigfile| replace:: iron_skillet_panos_full.xml
 .. |panoramaconfigfile| replace:: iron_skillet_panorama_full.xml

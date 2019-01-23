@@ -11,11 +11,8 @@ Welcome to Iron Skillet template documentation!
    :caption: Contents:
 
    overview
-   panos_template_guide
-   panorama_template_guide
-   using_default_templates
+   internet_gateway_templates
    using_the_spreadsheet
-   creating_loadable_configs
-   loading_the_template
-   snippets_common_or_device
+   gpcs_templates
+   template_format
    release_history
