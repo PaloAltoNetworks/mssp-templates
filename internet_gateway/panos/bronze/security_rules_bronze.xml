@@ -1,4 +1,82 @@
 <rules>
+ <entry name="block-quic">
+    <to>
+      <member>{{ ZONE_UNTRUST }}</member>
+    </to>
+    <from>
+      <member>{{ ZONE_TRUST }}</member>
+    </from>
+    <source>
+      <member>any</member>
+    </source>
+    <destination>
+      <member>any</member>
+    </destination>
+    <source-user>
+      <member>any</member>
+    </source-user>
+    <category>
+      <member>any</member>
+    </category>
+    <application>
+      <member>quic</member>
+    </application>
+    <service>
+      <member>application-default</member>
+    </service>
+    <hip-profiles>
+      <member>any</member>
+    </hip-profiles>
+    <action>deny</action>
+    <description>blocks quic and forces use of standard ssl for web sessio
+ns to help capture url values of encrypted sessions</description>
+    <log-setting>default</log-setting>
+     <tag>
+       <member>Gold</member>
+     </tag>
+  </entry>
+      <entry name="MSSP-no-unknown-URL-xfer">
+        <profile-setting>
+          <group>
+            <member>Outbound-Unknown-URL</member>
+          </group>
+        </profile-setting>
+        <to>
+          <member>{{ ZONE_UNTRUST }}</member>
+        </to>
+        <from>
+          <member>{{ ZONE_TRUST }}</member>
+        </from>
+        <source>
+          <member>any</member>
+        </source>
+        <destination>
+          <member>any</member>
+        </destination>
+        <source-user>
+          <member>any</member>
+        </source-user>
+        <category>
+          <member>unknown</member>
+        </category>
+        <application>
+          <member>any</member>
+        </application>
+        <service>
+          <member>application-default</member>
+        </service>
+        <hip-profiles>
+          <member>any</member>
+        </hip-profiles>
+        <action>allow</action>
+        <log-end>yes</log-end>
+        <log-setting>default</log-setting>
+        <description>This rule prevents the download of WF supported and risky file types from unknown category
+URL's.</description>
+         <tag>
+           <member>Bronze</member>
+         </tag>
+      </entry>
       <entry name="MSSP-allow-outbound">
         <to>
           <member>{{ ZONE_UNTRUST }}</member>
