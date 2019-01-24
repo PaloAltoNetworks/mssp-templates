@@ -30,7 +30,7 @@ variables:
     type_hint: text
   - name: ZONE_UNTRUST
     description: untrust zone name
-    default: internet
+    default: untrust
     type_hint: text
 
 snippets:
