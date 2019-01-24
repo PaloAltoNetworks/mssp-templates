@@ -47,7 +47,7 @@ variables:
     type_hint: text
   - name: ZONE_UNTRUST
     description: untrust zone name
-    default: internet
+    default: untrust
     type_hint: text
 # values below are extended from the basic xml templates
 # extra add-ons where required to be added to xml
