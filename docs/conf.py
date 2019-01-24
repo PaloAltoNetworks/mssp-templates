@@ -168,18 +168,18 @@ extlinks = {'panosrepo': ('https://github.com/scotchoaf/mssp-templates/tree/81de
 rst_prolog = """
 .. |branch| replace:: 81dev
 .. |skilletdocs| replace:: https://iron-skillet.readthedocs.io/en/81dev/
-.. |clonessh| replace:: git@github.com:PaloAltoNetworks/mssp-templates.git
-.. |clonehttps| replace:: https://github.com/PaloAltoNetworks/mssp-templates.git
-.. |repourl| replace:: https://github.com/PaloAltoNetworks/mssp-templates/tree/81dev
-.. |repotools| replace:: https://github.com/PaloAltoNetworks/mssp-templates/tree/81dev/tools
-.. |panosxpaths| replace:: https://github.com/PaloAltoNetworks/mssp-templates/blob/81dev/templates/panos/snippets/.meta-cnc.yaml
-.. |panossnippets| replace:: https://github.com/PaloAltoNetworks/mssp-templates/tree/81dev/templates/panos/snippets
-.. |panosloadorder| replace:: https://github.com/PaloAltoNetworks/mssp-templates/blob/81dev/templates/panos/snippets/.meta-cnc.yaml
-.. |panoramaxpaths| replace:: https://github.com/PaloAltoNetworks/mssp-templates/blob/81dev/templates/panorama/snippets/.meta-cnc.yaml
-.. |panoramasnippets| replace:: https://github.com/PaloAltoNetworks/mssp-templates/tree/81dev/templates/panorama/snippets
-.. |panoramaloadorder| replace:: https://github.com/PaloAltoNetworks/mssp-templates/blob/81dev/templates/panorama/snippets/.meta-cnc.yaml
-.. |panoramaset| replace:: https://github.com/PaloAltoNetworks/mssp-templates/tree/81dev/templates/panorama/set_commands
-.. |panosset| replace:: https://github.com/PaloAltoNetworks/mssp-templates/tree/81dev/templates/panos/set_commands
+.. |clonessh| replace:: git@github.com:scotchoaf/mssp-templates.git
+.. |clonehttps| replace:: https://github.com/scotchoaf/mssp-templates.git
+.. |repourl| replace:: https://github.com/scotchoaf/mssp-templates/tree/81dev
+.. |repotools| replace:: https://github.com/scotchoaf/mssp-templates/tree/81dev/tools
+.. |panosxpaths| replace:: https://github.com/scotchoaf/mssp-templates/blob/81dev/templates/panos/snippets/.meta-cnc.yaml
+.. |panossnippets| replace:: https://github.com/scotchoaf/mssp-templates/tree/81dev/templates/panos/snippets
+.. |panosloadorder| replace:: https://github.com/scotchoaf/mssp-templates/blob/81dev/templates/panos/snippets/.meta-cnc.yaml
+.. |panoramaxpaths| replace:: https://github.com/scotchoaf/mssp-templates/blob/81dev/templates/panorama/snippets/.meta-cnc.yaml
+.. |panoramasnippets| replace:: https://github.com/scotchoaf/mssp-templates/tree/81dev/templates/panorama/snippets
+.. |panoramaloadorder| replace:: https://github.com/scotchoaf/mssp-templates/blob/81dev/templates/panorama/snippets/.meta-cnc.yaml
+.. |panoramaset| replace:: https://github.com/scotchoaf/mssp-templates/tree/81dev/templates/panorama/set_commands
+.. |panosset| replace:: https://github.com/scotchoaf/mssp-templates/tree/81dev/templates/panos/set_commands
 .. |skilletpanoramatemplates| replace:: https://iron-skillet.readthedocs.io/en/81dev/panorama_template_guide.html
 .. |skilletpanostemplates| replace: https://iron-skillet.readthedocs.io/en/81dev/panos_template_guide.html
 """
