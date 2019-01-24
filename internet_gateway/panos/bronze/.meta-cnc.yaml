@@ -34,7 +34,7 @@ variables:
     type_hint: text
   - name: ZONE_UNTRUST
     description: untrust zone name
-    default: internet
+    default: untrust
     type_hint: text
 # toggle to NOT load the EDL security rules found in iron-skillet
 # not best practice but these EDLs require a threat protect subscription
