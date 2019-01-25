@@ -4,7 +4,7 @@
     <member>{{ INTF_TRUST }}</member>
   </interface>
   <virtual-router>
-    <member>mssp_vr</member>
+    <member>mssp</member>
   </virtual-router>
 </network>
 

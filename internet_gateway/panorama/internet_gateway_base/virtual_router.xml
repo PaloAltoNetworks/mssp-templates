@@ -1,4 +1,4 @@
-<entry name="mssp_vr">
+<entry name="mssp">
   <protocol>
     <bgp>
       <enable>no</enable>
