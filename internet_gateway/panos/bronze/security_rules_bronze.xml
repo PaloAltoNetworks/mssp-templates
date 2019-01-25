@@ -32,7 +32,7 @@
 ns to help capture url values of encrypted sessions</description>
     <log-setting>default</log-setting>
      <tag>
-       <member>Gold</member>
+       <member>Bronze</member>
      </tag>
   </entry>
       <entry name="MSSP-no-unknown-URL-xfer">

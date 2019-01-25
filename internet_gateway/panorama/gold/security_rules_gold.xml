@@ -1,8 +1,5 @@
 <rules>
   <entry name="block-quic">
-    <target>
-      <negate>no</negate>
-    </target>
     <to>
       <member>{{ ZONE_UNTRUST }}</member>
     </to>
@@ -242,7 +239,7 @@ he proper application determined. Once determined, the session will shift to the
           </group>
         </profile-setting>
         <description>This is a temporary safety net rule to find apps not on non-default ports. It still has the
- Gold security profile to look for threats, block bad URL's, and send files to WF.</description>
+security profile to look for threats, block bad URL's, and send files to WF.</description>
           <tag>
            <member>Gold</member>
          </tag>
