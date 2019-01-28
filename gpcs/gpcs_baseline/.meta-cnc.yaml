@@ -17,7 +17,7 @@ variables:
     default: trust
     type_hint: text
   - name: ZONE_UNTRUST
-    description: Trust zones for GPCS
+    description: Untrust zones for GPCS
     default: untrust
     type_hint: text
 
