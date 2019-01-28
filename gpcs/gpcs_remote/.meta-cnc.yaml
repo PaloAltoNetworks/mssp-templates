@@ -1,6 +1,6 @@
 name: gpcs_remote
-label: GPCS Remote Network
-description: GPCS Cloud Security Service
+label: GPCS Add New Remote Network
+description: add new site to GPCS cloud instance
 type: panorama-gpcs
 extends:
 
