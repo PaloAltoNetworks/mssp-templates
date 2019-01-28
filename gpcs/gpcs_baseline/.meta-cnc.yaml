@@ -1,6 +1,6 @@
 name: gpcs_baseline
-label: GPCS Baseline Configuration
-description: GPCS Cloud Security Service
+label: GPCS New Cloud Instance Configuration
+description: GPCS onboarding of new cloud instance
 type: panorama-gpcs
 extends: snippets_panorama
 
@@ -17,7 +17,7 @@ variables:
     default: trust
     type_hint: text
   - name: ZONE_UNTRUST
-    description: Trust zones for GPCS
+    description: Untrust zones for GPCS
     default: untrust
     type_hint: text
 
