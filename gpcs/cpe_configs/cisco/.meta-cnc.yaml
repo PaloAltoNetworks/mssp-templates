@@ -10,34 +10,33 @@ labels:
 
 variables:
 - name: service_ip
-  description: Service IP Address
+  description: Service IP Address obtained from gpcs service IP
   default: 192.0.9.1
   type_hint: text
-- name: preshared_key
+- name: VPN_SHARED_KEY
   description: Preshared Key
   default: 12345678
   type_hint: text
-- name: tunnel_source
-  description: Tunnel Source Interface
+- name: cpe_interface
+  description: Interface for tunnel association
   default: GigabitEthernet1
   type_hint: text
-- name: match_address
-  description: Subnet mapped to tunnel interface
-  default: 192.0.10.1
+- name: tunnel_interface
+  description: Tunnel interface name
+  default: Tunnel1
   type_hint: text
-- name: match_netmask
-  description: Netmask for match subnet
-  default: 255.255.255.0
-  type_hint: text
-- name: tunnel_ip
-  description: Destination IP of the tunnel
+- name: VPN_PEER_IP
+  description: Local address of the tunnel mapped to gpcs peer IP
   default: 192.0.11.1
   type_hint: text
-- name: tunnel_netmask
+- name: VPN_PEER_IP_netmask
   description: Network mask for tunnel interface
   default: 255.255.255.255
   type_hint: text
-
+- name: svc_ip_netmask
+  description: Netmask for match subnet
+  default: 255.255.255.0
+  type_hint: text
 
 snippets:
 - name: cisco_ipsec.conf
