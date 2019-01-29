@@ -1,7 +1,7 @@
 # set commands that add a basic Internet Gateway configuration to Iron-Skillet
 
 # snippet name
-name: set_command_gsb_panos
+name: set_command_gsb_panos_v81
 # label used for menu selection
 label: v8.1 G-S-B set commands for PAN-OS
 description: Set command configuration for PAN-OS

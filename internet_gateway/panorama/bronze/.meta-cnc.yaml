@@ -2,11 +2,11 @@
 # requires ignoring the Palo Alto Networks published EDL rules from iron-skillet
 # xml snippets not in the local directory pull from the gold master set of snippets
 
-name: bronze_panorama
+name: bronze_panorama_v81
 label: Bronze
 description: Bronze Basic Security
 type: panorama
-extends: internet_gateway_base_panorama
+extends: internet_gateway_base_panorama_v81
 
 labels:
   service_type: internet_gateway_panorama

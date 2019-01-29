@@ -1,4 +1,4 @@
-name: gpcs_remote
+name: gpcs_remote_v81
 label: GPCS Add New Remote Network
 description: add new site to GPCS cloud instance
 type: panorama-gpcs
