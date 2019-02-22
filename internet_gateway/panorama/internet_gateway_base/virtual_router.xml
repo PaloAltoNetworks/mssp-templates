@@ -1,4 +1,4 @@
-<entry name="default">
+<entry name="mssp">
   <protocol>
     <bgp>
       <enable>no</enable>

@@ -158,9 +158,9 @@ texinfo_documents = [
 
 # github file path that changes across repo and branches
 
-extlinks = {'panosrepo': ('https://github.com/scotchoaf/mssp-templates/tree/81dev/internet_gateway/panos/%s', 'PAN-OS template:   '),
-            'panoramarepo': ('https://github.com/scotchoaf/mssp-templates/tree/81dev/internet_gateway/panorama/%s', 'Panorama template:   '),
-            'setcommands': ('https://github.com/scotchoaf/mssp-templates/tree/81dev/internet_gateway/%s/set_commands', 'set commands '),
+extlinks = {'panosrepo': ('https://github.com/scotchoaf/mssp-templates/tree/panos_v8.1/internet_gateway/panos/%s', 'PAN-OS template:   '),
+            'panoramarepo': ('https://github.com/scotchoaf/mssp-templates/tree/panos_v8.1/internet_gateway/panorama/%s', 'Panorama template:   '),
+            'setcommands': ('https://github.com/scotchoaf/mssp-templates/tree/panos_v8.1/internet_gateway/%s/set_commands', 'set commands '),
             }
 
 # load config file name that changes across repo and branches
