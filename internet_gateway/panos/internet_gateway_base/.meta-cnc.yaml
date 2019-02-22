@@ -2,7 +2,7 @@ name: internet_gateway_base_panos_v81
 label: Internet Gateway Base Snippets
 description: Internet Gateway Base
 type: baseline
-extends: skillet_panos_v81
+extends: skillet_panos_v90
 
 labels:
   service_type: internet_gateway_base_panos
