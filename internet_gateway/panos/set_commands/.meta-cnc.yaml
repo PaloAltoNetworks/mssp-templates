@@ -1,9 +1,9 @@
-# set commands that add a basic Internet Gateway configuration to Iron-Skillet
+# set commands that add a basic Internet Gateway configuration to IronSkillet
 
 # snippet name
-name: set_command_gsb_panos_v81
+name: set_command_gsb_panos_v90
 # label used for menu selection
-label: v8.1 G-S-B set commands for PAN-OS
+label: v9.0 G-S-B set commands for PAN-OS
 description: Set command configuration for PAN-OS
 # type of device configuration
 type: template
@@ -63,8 +63,8 @@ variables:
     description: routing default-gatway if static interfaces used (no DHCP inheritance)
     default: 192.168.1.1
     type_hint: text
-# these may be pull from iron-skillet if chaining configurations
-# however added here to create the spreadsheet w/out iron-skillet data
+# these may be pull from IronSkillet if chaining configurations
+# however added here to create the spreadsheet w/out IronSkillet data
   - name: DNS_1
     description: primary DNS for the DHCP pool
     default: 8.8.8.8

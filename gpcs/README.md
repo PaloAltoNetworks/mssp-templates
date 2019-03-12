@@ -10,7 +10,7 @@
  3. Reference CPE configuration snippets for IPSEC connectivity to GPCS
 
 Included in the template configuration is the
-[Iron-Skillet](https://github.com/PaloAltoNetworks/iron-skillet) day one configuration.
+[IronSkillet](https://github.com/PaloAltoNetworks/iron-skillet) day one configuration.
 
 
 **NOTE:** This assumes the Panorama platform is operational with the GPCS

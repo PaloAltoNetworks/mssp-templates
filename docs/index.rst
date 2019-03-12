@@ -11,6 +11,7 @@ Welcome to MSSP template documentation!
    :caption: Contents:
 
    overview
+   whats_new
    internet_gateway_templates
    using_the_spreadsheet
    gpcs_templates

@@ -9,7 +9,7 @@ model to isolate each customer configuration. Deployments requiring shared or mi
 specific to their environment.
 
 
-The templates are incremental to and reference the iron-skillet day one configurations. The details of the iron-skillet
+The templates are incremental to and reference the IronSkillet day one configurations. The details of the IronSkillet
 templates can be found at:
 
 |skilletpanoramatemplates|.
@@ -54,7 +54,7 @@ Sample interface configurations with one for external/untrust and one internal/t
 
 
 .. Note::
-    The Panorama template is an extension of Iron-Skillet and includes network elements including interfaces and zones.
+    The Panorama template is an extension of IronSkillet and includes network elements including interfaces and zones.
     Thus this model uses 2 templates (skillet and internet gateway) with zones and address override in the stack. The
     internet gateway (ig) template is required to add the interface while the stack is required to associate to a device.
 
@@ -137,7 +137,7 @@ Gold Template
 
 ----------------------------------------------------------------------
 
-The gold configuration provides outbound security rules referencing the iron-skillet security profiles and logging. It
+The gold configuration provides outbound security rules referencing the IronSkillet security profiles and logging. It
 requires all subscription tiers for full functionality.
 
 
@@ -159,7 +159,7 @@ Gold Security Rules
 
 :panosrepo:`gold/security_rules_gold.xml`
 
-These are outbound-specific rules levering the iron-skillet security profile groups.
+These are outbound-specific rules levering the IronSkillet security profile groups.
 
     + Aggressive file blocking including PE file types when URL category = `unknown`
 
@@ -192,11 +192,11 @@ Silver Template
 
 ----------------------------------------------------------------------
 
-The silver configuration provides outbound security rules referencing the iron-skillet security profiles and logging.
+The silver configuration provides outbound security rules referencing the IronSkillet security profiles and logging.
 
 .. Warning::
         This tier does not provide support for best-practice security configurations due to the lack of URL Filtering and
-        Wildfire subscriptions. Although the configuraiton from iron-skillet does embed these elements, they are ignored
+        Wildfire subscriptions. Although the configuraiton from IronSkillet does embed these elements, they are ignored
         with a commit warning that the license is invalid.
 
 
@@ -209,7 +209,7 @@ Silver Security Rules
 :panosrepo:`silver/security_rules_silver.xml`
 
 
-These are outbound-specific rules levering the iron-skillet security profile groups.
+These are outbound-specific rules levering the IronSkillet security profile groups.
 
     + Outbound access for all applications using 'application default' port requirements
 
@@ -241,12 +241,12 @@ Bronze Template
 
 ----------------------------------------------------------------------
 
-The bronze configuration provides outbound security rules referencing the iron-skillet security profiles and logging.
+The bronze configuration provides outbound security rules referencing the IronSkillet security profiles and logging.
 
 
 .. Warning::
         This tier does not provide support for best-practice security configurations due to the lack of Threat Protection,
-        URL Filtering and Wildfire subscriptions. Although the configuraiton from iron-skillet does embed these elements,
+        URL Filtering and Wildfire subscriptions. Although the configuraiton from IronSkillet does embed these elements,
         they are ignored with a commit warning that the license is invalid.
 
 
@@ -259,7 +259,7 @@ Bronze Security Rules
 :panosrepo:`bronze/security_rules_bronze.xml`
 
 
-These are outbound-specific rules levering the iron-skillet security profile groups.
+These are outbound-specific rules levering the IronSkillet security profile groups.
 
     + Outbound access for all applications using 'application default' port requirements
 

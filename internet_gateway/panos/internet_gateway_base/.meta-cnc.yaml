@@ -1,4 +1,4 @@
-name: internet_gateway_base_panos_v81
+name: internet_gateway_base_panos_v90
 label: Internet Gateway Base Snippets
 description: Internet Gateway Base
 type: baseline

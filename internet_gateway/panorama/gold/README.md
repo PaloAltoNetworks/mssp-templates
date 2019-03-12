@@ -11,7 +11,7 @@ This template assumes the device has the following licenses:
 This provides the highest level of security aligned with best practices.
 
 Outbound rules are created using the recommended profile settings from
-the iron-skillet day one configuration.
+the IronSkillet day one configuration.
 
 In addition, a security rule to provide more aggressive file-blocking
 for unknown category URLs has been added.

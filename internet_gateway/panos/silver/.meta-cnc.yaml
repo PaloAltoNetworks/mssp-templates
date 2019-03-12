@@ -1,12 +1,12 @@
 # silver security templates for mid level security without URL, or WF subscriptions
-# compatible with iron-skillet configs but NOT BEST PRACTICE due to lack or URL and WF
+# compatible with IronSkillet configs but NOT BEST PRACTICE due to lack or URL and WF
 # xml snippets not in the local directory pull from the gold master set of snippets
 
-name: silver_panos_v81
+name: silver_panos_v90
 label: Silver
 description: Silver Advanced Security panos
 type: panos
-extends: internet_gateway_base_panos_v81
+extends: internet_gateway_base_panos_v90
 
 labels:
   service_type: internet_gateway_panos

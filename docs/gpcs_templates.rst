@@ -13,7 +13,7 @@ The GPCS templates are provided for 3 deployment needs:
     + sample IPSEC tunnel configurations for select CPE vendors
 
 
-The templates are incremental to and reference the iron-skillet day one configurations. The details of the iron-skillet
+The templates are incremental to and reference the IronSkillet day one configurations. The details of the IronSkillet
 templates can be found at:
 
 |skilletpanoramatemplates|.
