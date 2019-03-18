@@ -158,29 +158,29 @@ texinfo_documents = [
 
 # github file path that changes across repo and branches
 
-extlinks = {'panosrepo': ('https://github.com/scotchoaf/mssp-templates/tree/90dev/internet_gateway/panos/%s', 'PAN-OS template:   '),
-            'panoramarepo': ('https://github.com/scotchoaf/mssp-templates/tree/90dev/internet_gateway/panorama/%s', 'Panorama template:   '),
-            'setcommands': ('https://github.com/scotchoaf/mssp-templates/tree/90dev/internet_gateway/%s/set_commands', 'set commands '),
+extlinks = {'panosrepo': ('https://github.com/scotchoaf/mssp-templates/tree/panos_v9.0/internet_gateway/panos/%s', 'PAN-OS template:   '),
+            'panoramarepo': ('https://github.com/scotchoaf/mssp-templates/tree/panos_v9.0/internet_gateway/panorama/%s', 'Panorama template:   '),
+            'setcommands': ('https://github.com/scotchoaf/mssp-templates/tree/panos_v9.0/internet_gateway/%s/set_commands', 'set commands '),
             }
 
 # load config file name that changes across repo and branches
 
 rst_prolog = """
-.. |branch| replace:: 90dev
-.. |skilletdocs| replace:: https://iron-skillet.readthedocs.io/en/90dev/
+.. |branch| replace:: panos_v9.0
+.. |skilletdocs| replace:: https://iron-skillet.readthedocs.io/en/panos_v9.0/
 .. |clonessh| replace:: git@github.com:scotchoaf/mssp-templates.git
 .. |clonehttps| replace:: https://github.com/scotchoaf/mssp-templates.git
-.. |repourl| replace:: https://github.com/scotchoaf/mssp-templates/tree/90dev
-.. |repotools| replace:: https://github.com/scotchoaf/mssp-templates/tree/90dev/tools
-.. |panosxpaths| replace:: https://github.com/scotchoaf/mssp-templates/blob/90dev/templates/panos/snippets/.meta-cnc.yaml
-.. |panossnippets| replace:: https://github.com/scotchoaf/mssp-templates/tree/90dev/templates/panos/snippets
-.. |panosloadorder| replace:: https://github.com/scotchoaf/mssp-templates/blob/90dev/templates/panos/snippets/.meta-cnc.yaml
-.. |panoramaxpaths| replace:: https://github.com/scotchoaf/mssp-templates/blob/90dev/templates/panorama/snippets/.meta-cnc.yaml
-.. |panoramasnippets| replace:: https://github.com/scotchoaf/mssp-templates/tree/90dev/templates/panorama/snippets
-.. |panoramaloadorder| replace:: https://github.com/scotchoaf/mssp-templates/blob/90dev/templates/panorama/snippets/.meta-cnc.yaml
-.. |panoramaset| replace:: https://github.com/scotchoaf/mssp-templates/tree/90dev/templates/panorama/set_commands
-.. |panosset| replace:: https://github.com/scotchoaf/mssp-templates/tree/90dev/templates/panos/set_commands
-.. |skilletpanoramatemplates| replace:: https://iron-skillet.readthedocs.io/en/90dev/panorama_template_guide.html
-.. |skilletpanostemplates| replace: https://iron-skillet.readthedocs.io/en/90dev/panos_template_guide.html
+.. |repourl| replace:: https://github.com/scotchoaf/mssp-templates/tree/panos_v9.0
+.. |repotools| replace:: https://github.com/scotchoaf/mssp-templates/tree/panos_v9.0/tools
+.. |panosxpaths| replace:: https://github.com/scotchoaf/mssp-templates/blob/panos_v9.0/templates/panos/snippets/.meta-cnc.yaml
+.. |panossnippets| replace:: https://github.com/scotchoaf/mssp-templates/tree/panos_v9.0/templates/panos/snippets
+.. |panosloadorder| replace:: https://github.com/scotchoaf/mssp-templates/blob/panos_v9.0/templates/panos/snippets/.meta-cnc.yaml
+.. |panoramaxpaths| replace:: https://github.com/scotchoaf/mssp-templates/blob/panos_v9.0/templates/panorama/snippets/.meta-cnc.yaml
+.. |panoramasnippets| replace:: https://github.com/scotchoaf/mssp-templates/tree/panos_v9.0/templates/panorama/snippets
+.. |panoramaloadorder| replace:: https://github.com/scotchoaf/mssp-templates/blob/panos_v9.0/templates/panorama/snippets/.meta-cnc.yaml
+.. |panoramaset| replace:: https://github.com/scotchoaf/mssp-templates/tree/panos_v9.0/templates/panorama/set_commands
+.. |panosset| replace:: https://github.com/scotchoaf/mssp-templates/tree/panos_v9.0/templates/panos/set_commands
+.. |skilletpanoramatemplates| replace:: https://iron-skillet.readthedocs.io/en/panos_v9.0/panorama_template_guide.html
+.. |skilletpanostemplates| replace: https://iron-skillet.readthedocs.io/en/panos_v9.0/panos_template_guide.html
 """
 
