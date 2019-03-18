@@ -2,7 +2,7 @@
 
 Templates and documentation are based on sofware release version.
 
-Currently supported versions are:
+Current version include:
 
 **8.0**
 
@@ -18,6 +18,14 @@ Currently supported versions are:
 
 
 [Documentation](https://mssp-templates.readthedocs.io/en/panos_v8.1/)
+
+
+**9.0**
+
+[Templates](https://github.com/scotchoaf/mssp-templates/tree/panos_v9.0)
+
+
+[Documentation](https://mssp-templates.readthedocs.io/en/panos_v9.0/)
 
 
 
