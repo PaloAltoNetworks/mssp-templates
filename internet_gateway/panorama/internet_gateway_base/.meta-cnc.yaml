@@ -6,6 +6,7 @@ extends: skillet_panorama_dgstack_notshared_v90
 
 labels:
   service_type: internet_gateway_base
+  collection: mssp
 
 variables:
   - name: IG_BASE_TPL

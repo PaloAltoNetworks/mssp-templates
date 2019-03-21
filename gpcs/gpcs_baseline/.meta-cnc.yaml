@@ -6,6 +6,7 @@ extends: skillet_panorama_v90
 
 labels:
   service_type: gpcs
+  collection: mssp
 
 variables:
   - name: GPCS_IP
