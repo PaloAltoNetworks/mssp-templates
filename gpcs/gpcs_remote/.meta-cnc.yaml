@@ -6,7 +6,10 @@ extends:
 
 labels:
   service_type: gpcs
-  collection: mssp
+  collection:
+    - mssp
+    - gpcs
+    - panos90
 
 variables:
   - name: VPN_REMOTE_SITE
