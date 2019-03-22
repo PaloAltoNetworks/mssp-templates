@@ -40,6 +40,7 @@ Interface settings
 ~~~~~~~~~~~~~~~~~~
 
 :panoramarepo:`internet_gateway_base/interface_template.xml`
+
 :panoramarepo:`internet_gateway_base/interface_stack.xml`
 
 :panosrepo:`internet_gateway_base/interface.xml`

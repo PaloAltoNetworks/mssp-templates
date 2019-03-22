@@ -1,11 +1,12 @@
 name: internet_gateway_base_panorama
 label: Internet Gateway Base Snippets
 description: Internet Gateway Base
-type: baseline
+type: panorama
 extends: snippets_dgstack_notshared
 
 labels:
   service_type: internet_gateway_base
+  collection: mssp
 
 variables:
   - name: FW_NAME
