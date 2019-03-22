@@ -12,6 +12,7 @@ extends:
 # grouping of like snippets for dynamic menu creation in pan-cnc
 labels:
   service_type: internet_gateway_set
+  collection: mssp
 
 # variables used in the configuration templates
 # type_hint defines the form field type in pan-cnc

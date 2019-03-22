@@ -1,11 +1,12 @@
 name: internet_gateway_base_panorama_v81
 label: Internet Gateway Base Snippets
 description: Internet Gateway Base
-type: baseline
+type: panorama
 extends: skillet_panorama_dgstack_notshared_v81
 
 labels:
   service_type: internet_gateway_base
+  collection: mssp
 
 variables:
   - name: IG_BASE_TPL

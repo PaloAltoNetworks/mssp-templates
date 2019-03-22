@@ -10,6 +10,7 @@ extends: internet_gateway_base_panorama_v81
 
 labels:
   service_type: internet_gateway_panorama
+  collection: mssp
 
 variables:
   - name: FW_NAME
