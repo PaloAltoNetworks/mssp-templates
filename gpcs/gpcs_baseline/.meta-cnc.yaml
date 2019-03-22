@@ -6,6 +6,7 @@ extends: snippets_panorama
 
 labels:
   service_type: gpcs
+  collection: mssp
 
 variables:
   - name: GPCS_IP

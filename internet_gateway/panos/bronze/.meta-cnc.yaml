@@ -10,6 +10,7 @@ extends: internet_gateway_base_panos
 
 labels:
   service_type: internet_gateway_panos
+  collection: mssp
 
 variables:
   - name: FW_NAME
