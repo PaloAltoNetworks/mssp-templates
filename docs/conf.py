@@ -158,9 +158,9 @@ texinfo_documents = [
 
 # github file path that changes across repo and branches
 
-extlinks = {'panosrepo': ('https://github.com/scotchoaf/mssp-templates/tree/panos_v8.1/internet_gateway/panos/%s', 'PAN-OS template:   '),
-            'panoramarepo': ('https://github.com/scotchoaf/mssp-templates/tree/panos_v8.1/internet_gateway/panorama/%s', 'Panorama template:   '),
-            'setcommands': ('https://github.com/scotchoaf/mssp-templates/tree/panos_v8.1/internet_gateway/%s/set_commands', 'set commands '),
+extlinks = {'panosrepo': ('https://github.com/PaloAltoNetworks/mssp-templates/tree/panos_v8.1/internet_gateway/panos/%s', 'PAN-OS template:   '),
+            'panoramarepo': ('https://github.com/PaloAltoNetworks/mssp-templates/tree/panos_v8.1/internet_gateway/panorama/%s', 'Panorama template:   '),
+            'setcommands': ('https://github.com/PaloAltoNetworks/mssp-templates/tree/panos_v8.1/internet_gateway/%s/set_commands', 'set commands '),
             }
 
 # load config file name that changes across repo and branches
@@ -168,18 +168,18 @@ extlinks = {'panosrepo': ('https://github.com/scotchoaf/mssp-templates/tree/pano
 rst_prolog = """
 .. |branch| replace:: panos_v8.1
 .. |skilletdocs| replace:: https://iron-skillet.readthedocs.io/en/panos_v8.1/
-.. |clonessh| replace:: git@github.com:scotchoaf/mssp-templates.git
-.. |clonehttps| replace:: https://github.com/scotchoaf/mssp-templates.git
-.. |repourl| replace:: https://github.com/scotchoaf/mssp-templates/tree/panos_v8.1
-.. |repotools| replace:: https://github.com/scotchoaf/mssp-templates/tree/panos_v8.1/tools
-.. |panosxpaths| replace:: https://github.com/scotchoaf/mssp-templates/blob/panos_v8.1/templates/panos/snippets/metadata.yaml
-.. |panossnippets| replace:: https://github.com/scotchoaf/mssp-templates/tree/panos_v8.1/templates/panos/snippets
-.. |panosloadorder| replace:: https://github.com/scotchoaf/mssp-templates/blob/panos_v8.1/templates/panos/snippets/metadata.yaml
-.. |panoramaxpaths| replace:: https://github.com/scotchoaf/mssp-templates/blob/panos_v8.1/templates/panorama/snippets/metadata.yaml
-.. |panoramasnippets| replace:: https://github.com/scotchoaf/mssp-templates/tree/panos_v8.1/templates/panorama/snippets
-.. |panoramaloadorder| replace:: https://github.com/scotchoaf/mssp-templates/blob/panos_v8.1/templates/panorama/snippets/metadata.yaml
-.. |panoramaset| replace:: https://github.com/scotchoaf/mssp-templates/tree/panos_v8.1/templates/panorama/set_commands
-.. |panosset| replace:: https://github.com/scotchoaf/mssp-templates/tree/panos_v8.1/templates/panos/set_commands
+.. |clonessh| replace:: git@github.com:PaloAltoNetworks/mssp-templates.git
+.. |clonehttps| replace:: https://github.com/PaloAltoNetworks/mssp-templates.git
+.. |repourl| replace:: https://github.com/PaloAltoNetworks/mssp-templates/tree/panos_v8.1
+.. |repotools| replace:: https://github.com/PaloAltoNetworks/mssp-templates/tree/panos_v8.1/tools
+.. |panosxpaths| replace:: https://github.com/PaloAltoNetworks/mssp-templates/blob/panos_v8.1/templates/panos/snippets/metadata.yaml
+.. |panossnippets| replace:: https://github.com/PaloAltoNetworks/mssp-templates/tree/panos_v8.1/templates/panos/snippets
+.. |panosloadorder| replace:: https://github.com/PaloAltoNetworks/mssp-templates/blob/panos_v8.1/templates/panos/snippets/metadata.yaml
+.. |panoramaxpaths| replace:: https://github.com/PaloAltoNetworks/mssp-templates/blob/panos_v8.1/templates/panorama/snippets/metadata.yaml
+.. |panoramasnippets| replace:: https://github.com/PaloAltoNetworks/mssp-templates/tree/panos_v8.1/templates/panorama/snippets
+.. |panoramaloadorder| replace:: https://github.com/PaloAltoNetworks/mssp-templates/blob/panos_v8.1/templates/panorama/snippets/metadata.yaml
+.. |panoramaset| replace:: https://github.com/PaloAltoNetworks/mssp-templates/tree/panos_v8.1/templates/panorama/set_commands
+.. |panosset| replace:: https://github.com/PaloAltoNetworks/mssp-templates/tree/panos_v8.1/templates/panos/set_commands
 .. |skilletpanoramatemplates| replace:: https://iron-skillet.readthedocs.io/en/panos_v8.1/panorama_template_guide.html
 .. |skilletpanostemplates| replace: https://iron-skillet.readthedocs.io/en/panos_v8.1/panos_template_guide.html
 """
