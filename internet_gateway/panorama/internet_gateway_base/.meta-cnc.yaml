@@ -1,7 +1,7 @@
 name: internet_gateway_base_panorama_v90
 label: Internet Gateway Base Snippets
 description: Internet Gateway Base
-type: baseline
+type: panorama
 extends: skillet_panorama_dgstack_notshared_v90
 
 labels:
