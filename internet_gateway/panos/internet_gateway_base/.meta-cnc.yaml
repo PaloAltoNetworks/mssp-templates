@@ -1,11 +1,12 @@
 name: internet_gateway_base_panos_v81
 label: Internet Gateway Base Snippets
 description: Internet Gateway Base
-type: baseline
+type: panos
 extends: skillet_panos_v81
 
 labels:
   service_type: internet_gateway_base_panos
+  collection: mssp
 
 variables:
   - name: FW_NAME
