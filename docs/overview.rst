@@ -19,10 +19,6 @@ With the emphasis on repeatability, the templates provided cover:
 
     + Direct firewall internet gateway configs (xml and set snippets)
 
-    + GPCS core and remote_branch using Panorama
-
-    + Sample CPE IPSEC tunnel snippets for GCPS remote networks
-
 
 Relationship to the IronSkillet Project
 ----------------------------------------
