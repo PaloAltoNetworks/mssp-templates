@@ -45,8 +45,6 @@ variables:
     default: 'no'
     type_hint: dropdown
     dd_list:
-      - key: 'yes'
-        value: 'yes'
       - key: 'no'
         value: 'no'
 
