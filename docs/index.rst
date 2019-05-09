@@ -13,6 +13,5 @@ Welcome to MSSP template documentation!
    overview
    internet_gateway_templates
    using_the_spreadsheet
-   gpcs_templates
    template_format
    release_history

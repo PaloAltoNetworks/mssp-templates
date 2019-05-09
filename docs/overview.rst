@@ -19,17 +19,13 @@ With the emphasis on repeatability, the templates provided cover:
 
     + Direct firewall internet gateway configs (xml and set snippets)
 
-    + GPCS core and remote_branch using Panorama
 
-    + Sample CPE IPSEC tunnel snippets for GCPS remote networks
-
-
-Relationship to the Iron-Skillet Project
+Relationship to the IronSkillet Project
 ----------------------------------------
-Instead of a complete set of configuration snippets, the MSSP templates are incremental to the Iron-Skillet day one
+Instead of a complete set of configuration snippets, the MSSP templates are incremental to the IronSkillet day one
 best practice configurations.
 
-More information about Iron-Skillet can be found at:
+More information about IronSkillet can be found at:
 
 |skilletdocs|
 
@@ -42,7 +38,7 @@ such as the MSSP internet gateway templates to be deployment ready.
 Gold-Silver-Bronze Variants
 ---------------------------
 
-Iron-Skillet assume that users have all subscriptions (Threat Protection, URL Filtering, Wildfire) enabled to meet the
+IronSkillet assume that users have all subscriptions (Threat Protection, URL Filtering, Wildfire) enabled to meet the
 criteria of best practice. However, the MSSP can elect to tier services with incremental price points based on subscriptions.
 
 The template tiers using the generic Gold/Silver/Bronze naming convention provide alignment to subscription tiers:
