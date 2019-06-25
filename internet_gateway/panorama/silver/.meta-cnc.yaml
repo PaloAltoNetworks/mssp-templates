@@ -2,11 +2,11 @@
 # compatible with IronSkillet configs but NOT BEST PRACTICE due to lack or URL and WF
 # xml snippets not in the local directory pull from the gold master set of snippets
 
-name: silver_panorama_v90
+name: silver_panorama_v90_no_ext
 label: Silver
 description: Silver Advanced Security
 type: panorama
-extends: internet_gateway_base_panorama_v90
+extends:
 
 labels:
   service_type: internet_gateway_panorama

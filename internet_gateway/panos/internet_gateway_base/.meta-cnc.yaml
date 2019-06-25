@@ -1,8 +1,8 @@
-name: internet_gateway_base_panos_v90
+name: internet_gateway_base_panos_v90_no_ext
 label: Internet Gateway Base Snippets
 description: Internet Gateway Base
 type: panos
-extends: skillet_panos_v90
+extends:
 
 labels:
   service_type: internet_gateway_base_panos

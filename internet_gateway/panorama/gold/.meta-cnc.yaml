@@ -2,11 +2,11 @@
 # includes an additional security rule for strict file blocking of unknown url category
 # this is the master directory for xml snippets shared by silver and bronze
 
-name: gold_panorama_v90
+name: gold_panorama_v90_no_ext
 label: Gold
 description: Gold Advanced Security
 type: panorama
-extends: internet_gateway_base_panorama_v90
+extends:
 
 labels:
   service_type: internet_gateway_panorama

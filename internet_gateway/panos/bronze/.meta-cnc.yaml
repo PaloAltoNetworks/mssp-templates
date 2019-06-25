@@ -2,11 +2,11 @@
 # requires ignoring the Palo Alto Networks published EDL rules from IronSkillet
 # xml snippets not in the local directory pull from the gold master set of snippets
 
-name: bronze_panos_v90
+name: bronze_panos_v90_no_ext
 label: Bronze
 description: Bronze Basic Security panos
 type: panos
-extends: internet_gateway_base_panos_v90
+extends:
 
 labels:
   service_type: internet_gateway_panos
