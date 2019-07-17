@@ -33,11 +33,11 @@ variables:
   - name: IP_12
     description: IP 12
     default: 192.168.1.1/24
-    type_hint: ip_address
+    type_hint: text
   - name: IP_11
     description: IP 12
     default: 192.168.2.1/24
-    type_hint: ip_address
+    type_hint: text
   - name: ROUTING_DG
     description: untrust zone name
     default: 192.168.2.1
